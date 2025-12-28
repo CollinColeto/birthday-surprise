@@ -1,7 +1,15 @@
 <template>
   <section class="big-message">
 
-    <!-- 🎁 Gift Box -->
+    <!-- Text first -->
+    <h2>Another Year, Another Beautiful Chapter</h2>
+
+    <p>
+      This year is a blank page waiting for your story.
+      Happy Birthday — today and always. 🎂✨
+    </p>
+
+    <!-- 🎁 Gift Box under the text -->
     <div class="gift-wrapper" v-if="!opened" @click="openGift">
       <div class="gift-box">
         <div class="lid"></div>
@@ -23,14 +31,9 @@
       </div>
     </transition>
 
-    <h2>Another Year, Another Beautiful Chapter</h2>
-
-    <p>
-      This year is a blank page waiting for your story.
-      Happy Birthday — today and always. 🎂✨
-    </p>
   </section>
 </template>
+
 
 <script setup>
 import { ref, nextTick } from 'vue'
@@ -98,7 +101,7 @@ const launchConfetti = () => {
 /* 🎁 Gift Box */
 .gift-wrapper {
   cursor: pointer;
-  margin: 2rem 0;
+  margin: 6rem 0 1rem; /* increased top margin */
   perspective: 600px;
 }
 
