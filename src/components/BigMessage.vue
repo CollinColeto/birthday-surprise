@@ -14,7 +14,7 @@
     <transition name="scroll">
       <div class="scroll" v-if="opened">
         <p class="surprise">A little surprise just for you 💖</p>
-        <a href="/Happy Birthday Rain.pptx" download>
+        <a href="/BirthdaySurprise.zip" download="BirthdaySurprise.zip">
           Download your birthday surprise 🎉
         </a>
       </div>
